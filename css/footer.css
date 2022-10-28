@@ -1,0 +1,39 @@
+/* =========================== Section-11: "footer" ========================== */
+
+
+.section-11{
+    background-color: rgba(61, 155, 53, 0.2) ;
+    height: 300px;
+}
+
+.footer{
+text-align: center;
+}
+
+.footer img{
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.footer p{
+    /* color: rgba(0,0,0,0.8); */
+    font-size: 17px;
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+
+.footer i{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    background-color: #3D9B35;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer i:hover{
+    background-color: rgba(61, 155, 53, 0.8);
+}

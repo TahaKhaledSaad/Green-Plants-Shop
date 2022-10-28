@@ -1,0 +1,74 @@
+/* =========================== Section-3: "products" ========================== */
+
+.section-3 {
+    background: rgba(61, 155, 53, 0.2);
+}
+
+.all-products {
+    overflow: auto;
+}
+
+.item-product {
+    float: left;
+    width: 29%;
+    margin: auto;
+    margin: 10px 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.item-product img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.item-product-overlay {
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 30%;
+
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+.item-product-overlay span {
+    color: #3D9B35;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 5px 0px;
+    font-weight: 500;
+}
+
+.item-product-overlay h3 {
+    color: #fff;
+    margin: 15px 0px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.item-product-overlay a {
+    background-color: #3D9B35;
+    padding: 6px;
+    margin: 5px;
+    margin-top: 5px;
+}
+
+.item-product-overlay a i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.item-product:hover .item-product-overlay {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    z-index: 5;
+}

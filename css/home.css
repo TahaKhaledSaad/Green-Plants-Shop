@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::selection {
+    background-color: #3D9B35;
+    color: #fff;
+}
+
+body {}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* General Styels */
+
+.main-title {
+    font-size: 32px;
+    padding: 70px 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.below-line {
+    width: 10%;
+    height: 4px;
+    background-color: #3D9B35;
+    margin: auto;
+    margin-top: -63px;
+    margin-bottom: 80px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+.section-1 {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../media/bg-img-1.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.hide {
+   
+    display: none;
+}
+
+.my-blog:hover + .hide {
+    display: block;
+}
+
+.my-blog::after{
+    content: "Eng. Taha KH Saad";
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 0;
+    height: 0;
+
+    background-color:#3D9B35;
+    border-radius: 7px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    padding-top: 15px;
+    position: absolute;
+    margin-top: 50px;
+    margin-right: 20px;
+   
+    color: #fff;
+    visibility: hidden;
+  
+}
+
+.my-blog:hover::after{
+    width: 200px;
+    height: 50px;
+    visibility: visible;
+}
+/* =========================== Nav Bar =========================== */
+
+nav {
+    height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+
+}
+
+nav img {
+    height: 55px;
+    margin: 5px;
+    margin-left: 50px;
+}
+
+nav ul {
+    float: right;
+    position: fixed;
+    top: 20px;
+    right: 50px;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: #fff;
+    margin-right: 15px;
+    padding: 7px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: transparent transparent transparent transparent;
+}
+
+.home {
+    background-color: #3D9B35;
+    border-color: transparent transparent #3D9B35 transparent;
+}
+
+
+nav ul li a:hover {
+    background-color: #3D9B35;
+    transition: 1s;
+}
+
+/* =========================== Explain Section =========================== */
+
+.explain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.explain .project-title {
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.explain p {
+    color: #fff;
+    font-size: 21px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.explain button {
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.explain .btn1 {
+    border: none;
+
+}
+
+.explain .btn2 {
+    background-color: #3D9B35;
+    color: #fff;
+    border: none;
+}
+
+.explain .btn1:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.explain .btn2:hover {
+    background-color: rgba(61, 155, 53, 0.7);
+}

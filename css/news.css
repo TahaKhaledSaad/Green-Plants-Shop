@@ -1,0 +1,95 @@
+/* =========================== Section-10: "news" ========================== */
+
+
+.section-10 {
+   background-color: rgba(0,0,0,0.06);;
+}
+
+.news {
+    overflow: auto;
+    padding-bottom: 100px;
+}
+
+.news-item {
+    width: 25%;
+    float: left;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+}
+
+.news-item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.center-news{
+    margin: auto 10%;
+}
+
+.news-item .un-span{
+    margin-left: 18px;
+}
+
+.news-item .un-span i{
+    color: #3D9B35;
+}
+
+.news-item h3{
+    padding: 10px;
+    margin: 15px auto;
+}
+
+.news-item p{
+    padding: 10px;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.an-read{
+    margin-bottom: 20px;
+}
+
+.news-item a{
+    padding: 10px;
+    margin: 20px auto;
+    text-decoration-line: none;
+    font-weight: bold;
+    color: #3D9B35;
+}
+
+.news-item::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+     
+    width: 0;
+    height: 0;
+
+    background-color: rgba(61, 155, 53, 0.3);
+    transition: 0.6s;
+}
+
+.news-item:hover::before{
+    width: 50%;
+    height: 63%;
+}
+
+.news-item::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+     
+    width: 0;
+    height: 0;
+
+    background-color: rgba(61, 155, 53, 0.3);
+    transition: 0.6s;
+}
+
+.news-item:hover::after{
+    width: 50%;
+    height: 63%;
+}
